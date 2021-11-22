@@ -1,3 +1,10 @@
 home_route:
   path: /
-  defaults: {controller: 'App\Controllers\PagesController@home'}
+  defaults: { controller: 'App\Controllers\PagesController@home' }
+
+product_route:
+  path: /product/{id}
+  defaults: { controller: 'App\Controllers\ProductController@getProduct' }
+  methods: POST
+  requirements:
+    id: '[0-9]+'
