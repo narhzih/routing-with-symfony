@@ -1,0 +1,3 @@
+home_route:
+  path: /
+  defaults: {controller: 'App\Controllers\PagesController@home'}
